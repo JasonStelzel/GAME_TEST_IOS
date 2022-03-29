@@ -62,7 +62,6 @@ class FlowTest: XCTestCase {
         return Flow(questions: questions, router: router)
     }
 
-    
     class RouterSpy: Router {
         var routedQuestions: [String] = []
         var answerCallback: ((String) -> Void) = { _ in }
